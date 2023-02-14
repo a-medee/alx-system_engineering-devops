@@ -1,2 +1,2 @@
 #!/bin/bash
-set | grep "^[a-zA-Z_]" ; printenv | grep "^[a-zA-Z_]" ; declare -F
+set
