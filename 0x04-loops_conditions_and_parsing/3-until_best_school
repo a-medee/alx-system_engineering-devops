@@ -3,7 +3,7 @@
 # until
 
 start=0
-until [ $start -gt 10 ];
+until [ $start -gt 9 ];
 do
     echo "Best School"
     start=$((start+1))
