@@ -5,11 +5,10 @@
 start=10
 while [ $start -gt 0 ];
 do
+    echo "Best School"
     if [ $start = 2 ];
     then
 	echo "Hi"
-    else
-	echo "Best School"
     fi
     start=$((start-1))
 done
