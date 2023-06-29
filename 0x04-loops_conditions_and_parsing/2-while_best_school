@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # this script print "Best School" 10 times using
-# for loop
+# while loop
 
-for ((n=0; n<10; n++))
+start=10
+while [ $start -gt 0 ];
 do
     echo "Best School"
+    start=$((start-1))
 done
