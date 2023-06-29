@@ -8,20 +8,23 @@ var=1
 
 while [ $var -lt 21 ];
 do
-    if [ $var = 4 ]
-    then
-	echo $var
+    case $var in
+	"4")
+   	echo $var
 	echo "bad luck from China"
-    elif [ $var = 9 ]
-    then
+	var=$((var + 1))
+	;;
+	"9")
 	echo $var
 	echo "bad luck from Japan"
-    elif [ $var = 17 ]
-    then
+	var=$((var + 1))
+	;;
+	"17")
 	echo $var
 	echo "bad luck from Italy"
-    else
+	var=$((var + 1))
+	;;
+    esac
 	echo $var
-    fi
-    var=$((var + 1))
+	var=$((var + 1))
 done
