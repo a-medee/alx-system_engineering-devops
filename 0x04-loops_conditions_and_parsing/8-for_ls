@@ -7,5 +7,5 @@
 var="$(ls)"
 for elt in $var;
 do
-    echo "$elt"
+    echo "${elt}" | cut -d '-' -f 2-
 done
